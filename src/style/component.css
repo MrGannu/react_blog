@@ -1,0 +1,234 @@
+:root {
+  --light-background-color: #ffffff;
+  --primary-background-color: #1952ad;
+
+  --dark-font-color: #445766;
+  --light-font-color: #ffffff;
+}
+.content_div {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-background-color);
+}
+.topbar_div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: #f0f2f5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.topbarcontainer {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_items {
+  width: fit-content;
+  height: fit-content;
+}
+.nav_items {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.nav_items .li {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 0;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.6s ease-in;
+  margin: 0 1.3rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #445766;
+  text-decoration: none;
+  position: relative;
+}
+.nav_items .li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #445766;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav_items .li:hover::after,
+.nav_items .active.li::after {
+  width: 100%;
+  display: block;
+}
+.search {
+  width: fit-content;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.search img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.search input {
+  width: 400px;
+  padding: 0.8rem 0.5rem;
+  border: 0.5px solid #4457662b;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  }
+}
+.search button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.footer_div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  border-top: 1.5px solid #44576612;
+}
+.footer_container {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_semi_div {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer_semi_div p {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer_semi_div {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.footer_semi_div ul {
+  display: flex;
+  align-items: center;
+}
+.footer_semi_div li {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 0;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.6s ease-in;
+  border-bottom: 2px solid transparent;
+  margin: 0 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #445766;
+}
+.footer_semi_div li:hover {
+  border-bottom: 2px solid #445766;
+}
+
+.comment_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 70px 0;
+}
+.comment_container {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #44576632;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.comment_container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0.6rem;
+}
+.comment_container .send {
+  width: 24px !important;
+  height: 24px !important;
+}
+.comment_container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--dark-font-color);
+  cursor: pointer;
+}
+
+.SingleComment {
+  margin-bottom: 50px;
+}
+.user {
+  display: flex;
+  gap: 20px;
+}
+.user img {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 4px !important;
+  margin-top: 4px;
+  object-fit: cover;
+}
+.username {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.username h4 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.info p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.pagination_container {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+}
